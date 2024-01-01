@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jogodavelha.js" defer></script>
+</head>
+<body>
+    <!-- Construa um jogo tic-tac-toe, conhecido como joga da velha, utilizando HTML, CSS e Javascript. Você pode desenvolver com liberdade, da forma que preferir, mas o jogo precisa atender aos seguintes requisitos:
+     - Dever ser possível incluir os nomes dos dois jogadores;
+     - O nome do jogador da vez deve ser mostrado na tela e alterado a medida que os turnos vão se alternando;
+     - Um tabuleiro deve ser mostrado na tela e ser atualizado quando o jogador clicar na região que ele quer marcar;
+     - Quando um jogador clicar no tabuleiro, deve ser marado um "X" ou "O" de acordo com o jogador da vez e não deve ser possível clicar naquela região novamente;
+     - Quando um jogador ganhar seu nome deve ser mostrado na tela e as regiões da vitória devem ser destacadas de alguma forma;
+     - Em caso de empate, uma mensagem de empate deve ser mostrada na tela;
+     - Deve ser possível reiniciar o jogo para jogar novamente. -->
+    <header>
+        <h1>Jogo da Velha</h1>
+    </header>
+
+    <div id="playGame">
+        <button id="newGame">Novo Jogo</button>
+    </div>
+   
+    <div id="container">
+        
+         <main id="jogo">
+            <div class="A">
+                <input type="text" name="area" id="A1" class="quadrado" value="">
+                <input type="text" name="area" id="A2" class="quadrado" value="">
+                <input type="text" name="area" id="A3" class="quadrado" value="">
+            </div>
+            <div class="B">
+                <input type="text" name="area" id="B1" class="quadrado" value="">
+                <input type="text" name="area" id="B2" class="quadrado" value="">
+                <input type="text" name="area" id="B3" class="quadrado" value="">
+            </div>
+            <div class="C">
+                <input type="text" name="area" id="C1" class="quadrado" value="">
+                <input type="text" name="area" id="C2" class="quadrado" value="">
+                <input type="text" name="area" id="C3" class="quadrado" value="">
+            </div>
+         </main>
+         <section id="container-placar">
+                <h4 class="placar" id="titulo-j1">Jogador "X"</h4>
+                <h4 class="placar" id="vitorias">Vs</h4>
+                <h4 class="placar" id="titulo-j2">Jogador "O"</h4>
+                <h4 class="placar" id="placar-j1">0</h4>
+                <h4 class="placar" id="vs">Vitórias</h4>
+                <h4 class="placar" id="placar-j2">0</h4>
+         </section>
+    </div>
+</body>
+</html>
